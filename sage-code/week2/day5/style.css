@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#kitties {
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+}
+.kitty {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(100%);
+    transition-property: transform;
+}
+
+.kitty.onscreen {
+    transform: translateX(0);
+    transition-duration: 1s;
+}
+.kitty.exit-stage-left {
+    transform: translateX(-100%);
+    transition-duration: 1s;
+}
+
+.kitty img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    display: inline-block;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+}
+.current {
+    background-color: white;
+}

@@ -1,0 +1,39 @@
+#container {
+    position: absolute;
+    width: 800px;
+    height: 550px;
+    border: 5px solid darkslategrey;
+    box-sizing: border-box;
+}
+
+#bottom {
+    position: relative;
+    width: 100%;
+}
+#topimg {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    width: 50%;
+}
+
+img {
+    width: 790px;
+    height: 540px;
+}
+
+#bar {
+    position: absolute;
+    height: 540px;
+    width: 15px;
+    background-color: darkslategrey;
+    z-index: 2;
+    left: 50%;
+    top: 0px;
+    border: 1px solid darkslategrey;
+}
+
+img::selection {
+    background: transparent;
+}

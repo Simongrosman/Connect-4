@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+header {
+    background-color: darkorange;
+    height: 70px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+}
+footer {
+    background-color: hotpink;
+    height: 30px;
+}
