@@ -1,0 +1,87 @@
+
+<!doctype html>
+
+
+<head>
+  <title>Spaetifinder</title>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="/stylesheet.css">
+
+</head>
+
+
+
+<body>
+  <header>
+    <div class="wrapper">
+
+      <a href="/spaetifinder">
+        <div class="appName">
+          Spätifinder Berlin
+        </div>
+      </a>
+      <div class="searchContainer">
+        <input type="text" id="address" placeholder=" e.g. Skalitzer Straße"></input>
+        <button type="submit" id="searchAddress">Search</button>
+      </div>
+      <div class="menuContainer">
+        <i class="fas fa-ellipsis-v" style="font-size: 1em; color:white"></i>
+        <div class="menu">
+          <a class="menuList" href="/addspaeti"> Add Späti </a>
+          <a class="menuList" href="/spaetifinder">Map </a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </header>
+
+
+  <div id="map"></div>
+
+  <div id="modal" class="modal">
+    <p id="closeTag">x</p>
+  </div>
+
+  <div class="modal-body">
+
+    <div class="modalContent">
+      <h3 class="name"></h3>
+      <!-- <a class="addressLink"> -->
+        <p class="spaetiAddress"></p>
+      <!-- </a> -->
+      <a class="addLinkDir">Get directions </a>
+      <div class="titles">Distance to current location:
+        <p class="distance"></p>
+        <p class="distanceTime"></p>
+      </div>
+      <div class="titles">Opening hours:
+        <p class="openingHours"></p>
+      </div>
+      <div class="titles"> Choice of products:
+        <p class="offer"> </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="getGeoSearchParams.js"></script>
+
+  <script type="text/javascript" src="script.js"></script>
+  <script src="
+
+  https://maps.googleapis.com/maps/api/js?key=AIzaSyD4WhuiOWGjYKxfeO7RrqJsk0llTAEx5Kc&callback=init&libraries=geometry">
+  </script>
+
+
+
+</body>
+
+</html>
