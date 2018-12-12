@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80px;
+    font-family: Ebrima;
+    color: rgb(24, 78, 165);
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.explanation {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.slot {
+    background-color: rgb(24, 78, 165);
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 2px solid white;
+}
+.hole {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slot.Orange .hole {
+    background-color: rgb(245, 207, 63);
+    color: rgb(245, 207, 63);
+}
+.slot.Pink .hole {
+    background-color: rgb(221, 23, 43);
+    color: rgb(221, 23, 43);
+}
+.currplay {
+    width: 150px;
+    height: 100px;
+    border: 10px solid rgb(24, 78, 165);
+    margin: 30px;
+}
+.trafic {
+    font-size: 20px;
+    font-family: Ebrima;
+    color: rgb(24, 78, 165);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.trafic.Orange .hole1 {
+    background-color: rgb(245, 207, 63);
+}
+.trafic.Pink .hole1 {
+    background-color: rgb(221, 23, 43);
+}
+.hole1 {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 30%;
+    margin-left: 20px;
+}
+
+.logo {
+    background-image: url(https://bubble-medicine.glitch.me/gif?tag=yourock);
+    background-size: auto;
+}
+
+.again {
+    position: absolute;
+    top: 450px;
+    font-size: 50px;
+    color: white;
+    background-color: darkslategrey;
+    left: 40%;
+    cursor: pointer;
+}
